@@ -28,7 +28,7 @@ jobs:
 
       - name: Add assets
         working-directory: ..
-        run: cp -R easyScienceSite/assets easySite/src/copy
+        run: cp -R easyScienceWww/assets easySite/src/copy
 
       - name: Create config
         working-directory: ../easySite
@@ -45,7 +45,7 @@ jobs:
 
       - name: Copy built site to default working directory
         working-directory: ..
-        run: cp -R easySite/public easyScienceSite
+        run: cp -R easySite/public easyScienceWww
 
       - name: Deploy built site to 'public_...' branch
         uses: s0/git-publish-subdir-action@develop
