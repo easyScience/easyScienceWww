@@ -1,0 +1,56 @@
+name: build site
+
+on: push
+
+jobs:
+  build:
+    if: "!contains(github.event.head_commit.message, '[ci skip]')"
+
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Cancel previous workflow runs
+        uses: n1hility/cancel-previous-runs@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check-out repository
+        uses: actions/checkout@v2
+
+      - name: Declare env variables
+        if: github.event_name == 'push'
+        shell: bash
+        run: echo "BRANCH_NAME=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+
+      - name: Download dependences
+        working-directory: ..
+        run: git clone $GITHUB_SERVER_URL/easyScience/easySite
+
+      - name: Add assets
+        working-directory: ..
+        run: cp -R easyScienceWww/assets easySite/src/copy
+
+      - name: Create config
+        working-directory: ../easySite
+        run: |
+          echo '{"project": "easyScience"}' > project.json
+
+      - name: Install npm dependencies
+        working-directory: ../easySite
+        run: npm install
+
+      - name: Build site
+        working-directory: ../easySite
+        run: npm run build
+
+      - name: Copy built site to default working directory
+        working-directory: ..
+        run: cp -R easySite/public easyScienceWww
+
+      - name: Deploy built site to 'public_...' branch
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          GITHUB_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
+          REPO: self
+          BRANCH: public_${{ env.BRANCH_NAME }}
+          FOLDER: public

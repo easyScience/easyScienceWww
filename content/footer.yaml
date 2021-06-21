@@ -1,0 +1,12 @@
+project:
+  title: easyScience
+  icon: icon-easyscience
+  year: 2021
+  url: https://easyscience.software
+links:
+  - url: https://github.com/easyscience
+    icon: icon-github
+  - url: https://easyreflectometry.org
+    icon: icon-easyreflectometry
+  - url: https://easydiffraction.org
+    icon: icon-easydiffraction
