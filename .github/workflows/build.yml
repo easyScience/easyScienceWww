@@ -20,20 +20,23 @@ jobs:
       - name: Declare env variables
         if: github.event_name == 'push'
         shell: bash
-        run: echo "BRANCH_NAME=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+        run: |
+          echo "BRANCH_NAME=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+          echo "PROJECT_NAME=easyScience" >> $GITHUB_ENV
+          echo "PROJECT_EMAIL=contact@easyscience.software" >> $GITHUB_ENV
 
       - name: Download dependences
         working-directory: ..
-        run: git clone $GITHUB_SERVER_URL/easyScience/easySite
+        run: git clone ${GITHUB_SERVER_URL}/easyScience/easySite
 
       - name: Add assets
         working-directory: ..
-        run: cp -R easyScienceWww/assets easySite/src/copy
+        run: cp -R ${PROJECT_NAME}Www/assets easySite/src/copy
 
       - name: Create config
         working-directory: ../easySite
         run: |
-          echo '{"project": "easyScience"}' > project.json
+          echo '{"project": "${{ env.PROJECT_NAME }}"}' > project.json
 
       - name: Install npm dependencies
         working-directory: ../easySite
@@ -43,9 +46,13 @@ jobs:
         working-directory: ../easySite
         run: npm run build
 
+      - name: Change email in contact.php
+        working-directory: ../easySite
+        run: node_modules/replace-in-file/bin/cli.js contact@easyscience.software ${{ env.PROJECT_EMAIL }} public/php/contact.php
+
       - name: Copy built site to default working directory
         working-directory: ..
-        run: cp -R easySite/public easyScienceWww
+        run: cp -R easySite/public ${PROJECT_NAME}Www
 
       - name: Deploy built site to 'public_...' branch
         uses: s0/git-publish-subdir-action@develop

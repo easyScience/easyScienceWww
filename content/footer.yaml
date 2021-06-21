@@ -1,8 +1,8 @@
 project:
   title: easyScience
   icon: icon-easyscience
-  year: 2021
   url: https://easyscience.software
+  year: 2021
 links:
   - url: https://github.com/easyscience
     icon: icon-github
