@@ -47,7 +47,7 @@ jobs:
         working-directory: ..
         run: cp -R easySite/public easyScienceSite
 
-      - name: Deploy built site to branch: public_$BRANCH_NAME
+      - name: Deploy built site to branch: public_${{ env.BRANCH_NAME }}
         uses: s0/git-publish-subdir-action@develop
         env:
           GITHUB_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
