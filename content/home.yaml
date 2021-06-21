@@ -1,0 +1,93 @@
+hero:
+  title: Making _scientific_ data analysis and modelling _easy_
+  description: >-
+    **easyScience** is a Python/QML framework for data analysis being developed
+    to speed-up the time from data collection to publication. Users will be able
+    to both view and model their data using a variety of popular field dependent
+    engines or calculators within a friendly graphical interface or through a
+    Jupyter notebooks.
+  description_extra: >-
+    Current success stories are for the fields of powder
+    neutron diffraction and reflectometry where profiles based on user defined
+    models are simulated and refinement against experimental data.
+
+main_features:
+  - logo: https://easydiffraction.org/www/assets/img/logo.svg
+    title: easy**diffraction**
+    img: https://easydiffraction.org/assets/img/hero_light.png
+    link_text: easydiffraction.org
+    link_url: https://easydiffraction.org
+    description:
+      - item: >-
+          Simulation of diffraction patterns based on
+          structural models and refinement against experimental data.
+      - item: >-
+          Integrates such crystallographic data analysis libraries as
+          [CrysPy](https://github.com/ikibalin/cryspy),
+          [CrysFML](https://code.ill.fr/scientific-software/crysfml) and
+          [GSAS-II](https://subversion.xray.aps.anl.gov/trac/pyGSAS).
+
+  - logo: https://easyreflectometry.org/www/assets/img/logo.svg
+    title: easy**reflectometry**
+    img: https://easyreflectometry.org/assets/img/hero_light.png
+    link_text: easyreflectometry.org
+    link_url: https://easyreflectometry.org
+    description:
+      - item: >-
+          Simulation of reflectometry profiles based on layered
+          structures and refinement against experimental data.
+      - item: >-
+          Integrates such reflectometry data analysis libraries such as
+          [refnx](https://refnx.readthedocs.io/en/latest/) and
+          [bornagain](https://www.bornagainproject.org).
+
+features:
+  - icon: icon-open-source
+    title: Free and open-source
+    description: >-
+      Anyone is free to use **easyScience**-based applications and the source
+      code is openly shared on GitHub.
+  - icon: icon-cross-platform
+    title: Cross-platform
+    description: >-
+      **easyScience**-based applications works across operating systems: macOS,
+      Windows, or Linux.
+  - icon: fas fa-thumbs-up
+    title: Easy to use
+    description: >-
+      **easyScience**-based applications have intuitive tabbed interface with a
+      clear workflow, built-in step-by-step user guides and video tutorials.
+  - icon: icon-delivery-package
+    title: Everything is included
+    description: >-
+      **easyScience**-based applications are distributed as an all-in-one
+      package that includes all the dependencies and can be installed with only
+      a few clicks.
+  - icon: icon-swiss-knife
+    title: Multi-functional
+    description: >-
+      **easyScience**-based applications integrate existing technique-specific
+      libraries, to cover different functionality. Minimization can be done with
+      multiple packages such as **lmfit**, **bumps** and **DFO-LS**.
+  - icon: fas fa-sync-alt
+    title: Live update of calculations
+    description: >-
+      In **easyScience**-based applications, you can modify any parameter
+      manually or with a sidebar slider, and the simulated model curve is
+      automatically recalculated in real time.
+
+contact:
+  - icon: fas fa-question-circle
+    title: General questions
+    description: >-
+      For general questions or comments related to **easyScience** framework,
+      please contact us at
+      [contact@easyscience.software](mailto:contact@easyscience.software), or
+      fill out the form.
+  - icon: fas fa-bug
+    title: Technique-specific questions
+    description: >-
+      For technique-specific, please use
+      [**easyDiffraction**](https://easydiffraction.org/#_contact), or
+      [**easyReflectometry**](https://easyreflectometry.org/#_contact)
+      contact forms instead.
