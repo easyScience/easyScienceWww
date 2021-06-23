@@ -6,6 +6,10 @@ project:
 links:
   - url: https://github.com/easyscience
     icon: icon-github
+  - url: https://core.easyscience.software
+    icon: icon-easycore
+  - url: https://app.easyscience.software
+    icon: icon-easyapp
   - url: https://easyreflectometry.org
     icon: icon-easyreflectometry
   - url: https://easydiffraction.org
