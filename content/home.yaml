@@ -47,7 +47,7 @@ features:
     description: >-
       Anyone is free to use **easyScience**-based applications and the source
       code is openly shared on GitHub.
-  - icon: icon-cross-platform
+  - icon: icon-multiple-devices
     title: Cross-platform
     description: >-
       **easyScience**-based applications works across operating systems: macOS,
@@ -57,13 +57,13 @@ features:
     description: >-
       **easyScience**-based applications have intuitive tabbed interface with a
       clear workflow, built-in step-by-step user guides and video tutorials.
-  - icon: icon-delivery-package
+  - icon: icon-package
     title: Everything is included
     description: >-
       **easyScience**-based applications are distributed as an all-in-one
       package that includes all the dependencies and can be installed with only
       a few clicks.
-  - icon: icon-swiss-knife
+  - icon: icon-swiss-army-knife
     title: Multi-functional
     description: >-
       **easyScience**-based applications integrate existing technique-specific
