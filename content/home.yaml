@@ -12,7 +12,7 @@ hero:
     models are simulated and refinement against experimental data.
 
 main_features:
-  - logo: https://easydiffraction.org/www/assets/img/logo.svg
+  - logo: https://easydiffraction.org/www/assets/img/logomark.svg
     title: easy**diffraction**
     img: https://easydiffraction.org/assets/img/hero_lightmode.png
     link_text: easydiffraction.org
@@ -26,7 +26,7 @@ main_features:
           [CrysPy](https://github.com/ikibalin/cryspy) and
           [CrysFML](https://code.ill.fr/scientific-software/crysfml).
 
-  - logo: https://easyreflectometry.org/www/assets/img/logo.svg
+  - logo: https://easyreflectometry.org/www/assets/img/logomark.svg
     title: easy**reflectometry**
     img: https://easyreflectometry.org/assets/img/hero_lightmode.png
     link_text: easyreflectometry.org
