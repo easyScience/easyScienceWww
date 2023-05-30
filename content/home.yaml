@@ -1,7 +1,7 @@
 hero:
   title: Making _scientific_ data analysis and modelling _easy_
   description: >-
-    **easyScience** is a Python/QML framework for data analysis being developed
+    **EasyScience** is a Python/QML framework for data analysis being developed
     to speed-up the time from data collection to publication. Users will be able
     to both view and model their data using a variety of popular field dependent
     engines or calculators within a friendly graphical interface or through a
@@ -14,7 +14,7 @@ hero:
 main_features:
   - logo: https://easydiffraction.org/www/assets/img/logo.svg
     title: easy**diffraction**
-    img: https://easydiffraction.org/assets/img/hero_light.png
+    img: https://easydiffraction.org/assets/img/hero_lightmode.png
     link_text: easydiffraction.org
     link_url: https://easydiffraction.org
     description:
@@ -23,13 +23,12 @@ main_features:
           structural models and refinement against experimental data.
       - item: >-
           Integrates such crystallographic data analysis libraries as
-          [CrysPy](https://github.com/ikibalin/cryspy),
-          [CrysFML](https://code.ill.fr/scientific-software/crysfml) and
-          [GSAS-II](https://subversion.xray.aps.anl.gov/trac/pyGSAS).
+          [CrysPy](https://github.com/ikibalin/cryspy) and
+          [CrysFML](https://code.ill.fr/scientific-software/crysfml).
 
   - logo: https://easyreflectometry.org/www/assets/img/logo.svg
     title: easy**reflectometry**
-    img: https://easyreflectometry.org/assets/img/hero_light.png
+    img: https://easyreflectometry.org/assets/img/hero_lightmode.png
     link_text: easyreflectometry.org
     link_url: https://easyreflectometry.org
     description:
@@ -39,40 +38,40 @@ main_features:
       - item: >-
           Integrates such reflectometry data analysis libraries such as
           [refnx](https://refnx.readthedocs.io/en/latest/) and
-          [bornagain](https://www.bornagainproject.org).
+          [refl1d](https://refl1d.readthedocs.io/en/latest/).
 
 features:
   - icon: icon-open-source
     title: Free and open-source
     description: >-
-      Anyone is free to use **easyScience**-based applications and the source
+      Anyone is free to use **EasyScience**-based applications and the source
       code is openly shared on GitHub.
   - icon: icon-multiple-devices
     title: Cross-platform
     description: >-
-      **easyScience**-based applications works across operating systems: macOS,
+      **EasyScience**-based applications works across operating systems: macOS,
       Windows, or Linux.
   - icon: fas fa-thumbs-up
     title: Easy to use
     description: >-
-      **easyScience**-based applications have intuitive tabbed interface with a
+      **EasyScience**-based applications have intuitive tabbed interface with a
       clear workflow, built-in step-by-step user guides and video tutorials.
   - icon: icon-package
     title: Everything is included
     description: >-
-      **easyScience**-based applications are distributed as an all-in-one
+      **EasyScience**-based applications are distributed as an all-in-one
       package that includes all the dependencies and can be installed with only
       a few clicks.
   - icon: icon-swiss-army-knife
     title: Multi-functional
     description: >-
-      **easyScience**-based applications integrate existing technique-specific
+      **EasyScience**-based applications integrate existing technique-specific
       libraries, to cover different functionality. Minimization can be done with
       multiple packages such as **lmfit**, **bumps** and **DFO-LS**.
   - icon: fas fa-sync-alt
     title: Live update of calculations
     description: >-
-      In **easyScience**-based applications, you can modify any parameter
+      In **EasyScience**-based applications, you can modify any parameter
       manually or with a sidebar slider, and the simulated model curve is
       automatically recalculated in real time.
 
@@ -80,7 +79,7 @@ contact:
   - icon: fas fa-question-circle
     title: General questions
     description: >-
-      For general questions or comments related to **easyScience** framework,
+      For general questions or comments related to **EasyScience** framework,
       please contact us at
       [contact@easyscience.software](mailto:contact@easyscience.software), or
       fill out the form.
@@ -88,6 +87,6 @@ contact:
     title: Technique-specific questions
     description: >-
       For technique-specific, please use
-      [**easyDiffraction**](https://easydiffraction.org/#_contact), or
-      [**easyReflectometry**](https://easyreflectometry.org/#_contact)
+      [**EasyDiffraction**](https://easydiffraction.org/#contact), or
+      [**EasyReflectometry**](https://easyreflectometry.org/#contact)
       contact forms instead.
