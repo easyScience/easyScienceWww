@@ -129,14 +129,14 @@
   function imgThemeTo(theme) {
     let images = document.getElementsByTagName('img')
     for (let img of images) {
-      img.src = (theme === 'dark') ? img.src.replace('_light', '_dark') : img.src.replace('_dark', '_light')
+      img.src = (theme === 'dark') ? img.src.replace('_lightmode', '_darkmode') : img.src.replace('_darkmode', '_lightmode')
     }
   }
 
   function posterThemeTo(theme) {
     let videos = document.getElementsByTagName('video')
     for (let video of videos) {
-      video.poster = (theme === 'dark') ? video.poster.replace('_light', '_dark') : video.poster.replace('_dark', '_light')
+      video.poster = (theme === 'dark') ? video.poster.replace('_lightmode', '_darkmode') : video.poster.replace('_darkmode', '_lightmode')
     }
   }
 
